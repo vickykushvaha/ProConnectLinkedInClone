@@ -4,7 +4,7 @@ const {default:axios}=require ("axios")
 // export const clientServer=axios.create({
     
 
-export const BASE_URL="http://localhost:8989"
+export const BASE_URL="https://proconnectlinkedinclone-ceu0.onrender.com/"
 export const clientServer=axios.create({
     baseURL:BASE_URL
 })
