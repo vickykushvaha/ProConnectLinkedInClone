@@ -1,0 +1,179 @@
+
+.homeContainer > div {
+  overflow-y: auto;       
+  scrollbar-width: none;  
+  -ms-overflow-style: none; 
+}
+
+
+.homeContainer > div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+/* //////////////////////////////////////////// */
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  gap: 1rem;
+  height: calc(100vh - 6rem); 
+}
+
+/* Left Sidebar */
+.homeContainer > div:nth-child(1) {
+  flex: 0.2;
+  overflow-y: auto;         
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  background: #fff;
+}
+
+/* Main Feed */
+.homeContainer > div:nth-child(2) {
+  flex: 0.6;
+  overflow-y: auto;       
+  padding: 1rem;
+}
+
+/* Right Extra Container */
+.homeContainer_extraContainer {
+  flex: 0.2;
+  overflow-y: auto;       
+  padding: 1rem;
+  border-left: 1px solid #ddd;
+  background: #fff;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////// */
+.homeContainer_leftBar{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-right: 1px solid rgb(220, 220, 220);
+}
+
+.sideBarOptions{
+    display: flex;
+    gap: 1.3rem;
+    font-size: 1.4rem;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+ transition: all 0.2s;
+}
+
+.sideBarOptions:hover{
+transform: scale(1.04);
+}
+
+.sideBarOptions svg{
+    height: 1.4em;
+    min-width: fit-content;
+}
+
+
+
+
+
+
+
+
+.homeContainer_feedContainer{
+    padding-inline: 0.8rem;
+    
+   
+}
+
+
+
+
+
+
+/* //////////////////////////////////////  media query all below //////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+ /* mobile navbar */
+ .mobileNavBar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 6vh;
+position: fixed;
+  display:none;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+   border-top: 1px solid #ddd;
+   
+ }
+  .singleNavItemHolder_mobileView{
+
+  }
+
+ .mobileNavBar svg {
+  height: 2rem;
+  width: 2rem;
+  fill: #f9f9f9;        
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mobileNavBar svg:hover {
+  transform: scale(1.3);
+  fill: #e3e3e3; 
+}
+
+/* media Query */
+@media only screen and (max-width:600px){
+    .container{
+        margin-top: 6rem;
+    
+    }
+    .homeContainer_extraContainer{
+        display: none;
+    }
+    .homeContainer{
+        display: block;
+
+
+    }
+    .homeContainer_leftBar{
+        display: none;
+    }
+
+    .mobileNavBar{
+        display: flex;
+    }
+
+    .homeContainer_feedContainer{
+        padding-bottom: 8vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+

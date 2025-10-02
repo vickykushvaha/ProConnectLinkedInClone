@@ -1,0 +1,99 @@
+/* Container */
+.userCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;   
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.userCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Picture */
+.profilePicture {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  border: 2px solid #f0f0f0;
+
+}
+
+.profilePicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* User Info */
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userInfo h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.userInfo p {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .userCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profilePicture {
+    margin-bottom: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+.connectedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;  
+
+   background-color: rgb(72, 72, 210);
+  padding: 0.3rem 1.2rem;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+
+}
+
+.connectedButton:hover {
+  background-color: rgb(102, 102, 203);
+}
+
+
+

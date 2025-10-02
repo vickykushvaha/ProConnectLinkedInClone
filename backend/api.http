@@ -1,0 +1,82 @@
+######################### new users register################################################################
+
+# POST http://localhost:8989/register HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name": "vicky kushvaha",
+#     "username": "@Vickykushvaha9",
+#     "password": "Vicky@1900",
+#     "email": "vickykushvaha99@gmail.com"
+# }
+
+
+
+
+
+############################# user login after register ##############################################
+
+# POST http://localhost:8989/login HTTP/1.1
+# Content-Type: application/json
+ 
+# {
+     
+#     "password": "Vicky@1900",
+#     "email": "vickykushvaha99@gmail.com" 
+# } 
+
+
+
+
+
+
+########################### get users and profiles#########################################################
+
+GET http://localhost:8989/get_user_and_profile HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "token": "8e63246f2fc318179348ded5da93a5cb6046b9499037ce808fc740409ef013e4"
+}
+
+
+################################ for add profile data ########################################
+## we use postman  , because this api.http can not send image , and in profile picture required fro profile
+
+
+
+
+
+
+
+###################################### update profile data ######################################################
+
+POST  http://localhost:8989/update_profile_data HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "token": "ae0fcdc11775797ccd97587119654729db5b761b7cb2ec9d3038c835ba6fb02c",
+  "bio": "soft were developer",
+  "currentPost": "full stack developer",
+  "pastWork": [
+    {  
+      "company": "microsoft",
+      "position": "software eng",
+      "years": "6+"
+    }
+  ],
+  "education": [
+    {
+      "school": "driems university cuttack",
+      "degree": "B tech",
+      "fieldOfStudy": "2021-2025"
+    }
+  ]
+}
+
+
+
+
+################################ get all users profiles #######
+ POST  http://localhost:8989/user/send_connection_request HTTP/1.1
+ 
